@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BT JS buổi 7 - 8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-6">
+                    <input class="form-control" id="nhapSo">
+                </div>
+                <div class="col-6">
+                    <button id="btnThemSo" class="btn btn-success">Thêm số</button>
+                </div>
+            </div>
+            <div id="themSo" class="alert alert-success mt-3">
+            </div>
+        </div>
+        <hr>
+        <h3>1. Tổng số dương</h3>
+        <div class="form-group">
+            <button id="btnTinhTong" class="btn btn-success">Tính tổng</button>
+            <div id="tinhTong" class="alert alert-success mt-3">
+            </div>
+        </div>
+        <hr>
+        <h3>2. Đếm số dương</h3>
+        <div class="form-group">
+            <button id="btnDemSo" class="btn btn-success">Đếm số</button>
+            <div id="demSo" class="alert alert-success mt-3">
+            </div>
+        </div>
+        <hr>
+        <h3>3. Tìm số nhỏ nhất</h3>
+        <div class="form-group">
+            <button id="bntTimSoNhoNhat" class="btn btn-success">Tìm số nhỏ nhất</button>
+            <div id="timSoNhoNhat" class="alert alert-success mt-3">
+            </div>
+        </div>
+        <hr>
+        <h3>4. Tìm số dương nhỏ nhất</h3>
+        <div class="form-group">
+            <button id="bntTimSoDuongNhoNhat" class="btn btn-success">Tìm số dương nhỏ nhất</button>
+            <div id="timSoDuongNhoNhat" class="alert alert-success mt-3">
+            </div>
+        </div>
+        <hr>
+        <h3>5. Tìm số chẵn cuối cùng</h3>
+        <div class="form-group">
+            <button id="bntTimSoChan" class="btn btn-success">Tìm số chẵn</button>
+            <div id="timSoChan" class="alert alert-success mt-3">
+            </div>
+        </div>
+        <hr>
+        <h3>6. Đổi chỗ</h3>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-6">
+                    <input class="form-control" id="nhapSo-1">
+                </div>
+                <div class="col-6">
+                    <input class="form-control" id="nhapSo-2">
+                </div>
+            </div>
+            <button id="bntDoiCho" class="btn btn-success mt-3">Đổi chỗ</button>
+            <div id="doiCho" class="alert alert-success mt-3">
+            </div>
+        </div>
+        <hr>
+        <h3>7. Sắp xếp tăng dần</h3>
+        <div class="form-group">
+            <button id="bntSapXep" class="btn btn-success">Sắp xếp</button>
+            <div id="sapXep" class="alert alert-success mt-3">
+            </div>
+        </div>
+        <hr>
+        <h3>8. Tìm số nguyên đầu tiên</h3>
+        <div class="form-group">
+            <button id="bntTimSoNguyenTo" class="btn btn-success">Tìm số nguyên tố</button>
+            <div id="timSoNguyenTo" class="alert alert-success mt-3">
+            </div>
+        </div>
+        <hr>
+        <h3>9. Đếm số nguyên</h3>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-6">
+                    <input class="form-control" id="nhapSo-3">
+                </div>
+                <div class="col-6">
+                    <button id="btnThemSo-2" class="btn btn-success">Thêm số</button>
+                </div>
+            </div>
+            <div id="themSo-2" class="alert alert-success mt-3">
+            </div>
+        </div>
+        <div class="form-group">
+            <button id="bntDemSoNguyen" class="btn btn-success">Đếm số nguyên</button>
+            <div id="demSoNguyen" class="alert alert-success mt-3">
+            </div>
+        </div>
+        <hr>
+        <h3>10. So sánh số lượng số âm và số dương</h3>
+        <div class="form-group">
+            <button id="bntSoSanh" class="btn btn-success">So sánh</button>
+            <div id="soSanh" class="alert alert-success mt-3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./JS/method.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
