@@ -124,11 +124,10 @@ document.getElementById('bntDemSoNguyen').onclick = function(){
     
     var count = 0;
     for (var i = 0; i < arrNumber.length; ++i) {
-        var check = soNguyenDuong(arrNumber[i]);
-        if (check == 1) {
-           document.getElementById('demSoNguyen').innerHTML = arrNumber[i]+ " ";
-            ++count;  
+        if (Number.isInteger(arrNumber[i])) {
+            count++; 
         }
+        document.getElementById('demSoNguyen').innerHTML = count;
     }
    
 }
